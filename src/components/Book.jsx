@@ -7,9 +7,7 @@ export default function Book() {
 
   const toggleFavorite = (id) => {
     setFavorites((prevFavs) =>
-      prevFavs.includes(id)
-        ? prevFavs.filter((favId) => favId !== id)
-        : [...prevFavs, id]
+      prevFavs.includes(id) ? prevFavs.filter((favId) => favId !== id) : [...prevFavs, id]
     );
   };
   const toggleDropdown = (id) => {
